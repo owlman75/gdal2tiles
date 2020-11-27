@@ -1150,6 +1150,9 @@ def create_overview_tiles(tile_job_info, output_folder, options):
                 # Write a copy of tile to png/jpg
                 if options.resampling != 'antialias':
                     # Write a copy of tile to png/jpg
+                    print('OPTIONS:', options)
+                    print('TILEFILENAME:', tilefilename)
+                    print('DSTILE:', dstile)
                     out_driver.CreateCopy(tilefilename, dstile, strict=0)
 
                 if options.verbose:
